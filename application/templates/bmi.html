@@ -1,16 +1,11 @@
 <html>
-<head>
-    <title>BMI calculator</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='bootstrap-4.3.1-dist/css/bootstrap.min.css')}}
-</head>
     <body>
         <form action="/" method="POST">
-            <h3 class="page-header text-primary">BMI CALCULATOR</h3>
             Weight in KG
             <input type="text" name="weight"><br>
             Height in cm
             <input type="text" name="height"><br>
-            <button type="submit" value="submit" class="btn btn-success">Calculate</button>
+            <button type="submit" value="submit">Calculate</button>
         </form>
         {% if bmi %}
         <p>your bmi is {{bmi}}</p>
