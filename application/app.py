@@ -11,7 +11,3 @@ def calculate():
         h = float(request.form.get('height'))
         bmi = round(w/((h/100)**2),2)
     return render_template("index.html", bmi=bmi)
-
-const PORT = process.env.PORT|| '9430'
-app = express();
-app.set("port",'PORT');
